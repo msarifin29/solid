@@ -1,7 +1,6 @@
-D = Dependency Inversion Principle (DIP)
+# D = Dependency Inversion Principle (DIP)
 
-"High-level modules should not depend on low-level modules. Both should depend on abstractions." 
-(Robert Cecil Martin)
+## "High-level modules should not depend on low-level modules. Both should depend on abstractions." (Robert Cecil Martin)
 
 Prinsip Dependency Inversion hampir sama dengan konsep layering dalam aplikasi, 
 di mana low-level modules bertanggung jawab dengan fungsi yang sangat detail dan 
@@ -9,7 +8,7 @@ high-level modules menggunakan low-level classes untuk mencapai tugas yang lebih
 Hal ini bisa dicapai dengan bergantung pada sebuah abstraksi, ketika ada ketergantungan 
 antar kelas seperti interface, daripada referensi langsung ke kelas lainnya.
 
-Tanpa (DIP)
+### Tanpa (DIP)
 ```dart
 class Car {
   final Engine _engine;
@@ -33,7 +32,7 @@ class DieselEngine {
 }
 ```
 
-(DIP)
+### (DIP)
 ```dart
 abstract class EngineInterface {
   void start();
@@ -82,3 +81,5 @@ void main() {
   hybridCar.start();
 }
 ```
+
+<img src="https://github.com/msarifin29/solid/blob/main/D.jpeg" width="350" height="700" />
