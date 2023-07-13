@@ -1,12 +1,11 @@
-O = Open/Close Principle (OCP)
+# O = Open/Close Principle (OCP)
 
-"A software artifact should be open for extension but closed for 
-modification." [2] (Bertrand Meyer, 1988)
+## "A software artifact should be open for extension but closed for modification." [2] (Bertrand Meyer, 1988)
 
 Sebuah artefak perangkat lunak harus terbuka untuk ditambahkan 
 tetapi tertutup untuk dimodifikasi. 
 
-Tanpa (OCP)
+### Tanpa (OCP)
 ```dart
 class CinemaCalculations {
   double calculateAdminFee(Cinema cinema) {
@@ -23,7 +22,7 @@ class CinemaCalculations {
 }
 ```
 
-(OCP)
+## (OCP)
 ```dart
 class Cinema {
   double price;
@@ -42,3 +41,4 @@ class PremiumCinema extends Cinema {
   PremiumCinema(double price) : super(price);
 }
 ```
+<img src="https://github.com/msarifin29/solid/blob/main/O.jpeg" width="350" height="700" />
