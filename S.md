@@ -1,10 +1,10 @@
-S = Single Responsibility Principle(SRP)
+# S = Single Responsibility Principle(SRP)
 
-"A module should be responsible to one, and only one, actor." [2] (Robert Cecil Martin, 2017)
+### A module should be responsible to one, and only one, actor. [2] '(Robert Cecil Martin, 2017)'
 
 setiap class dipisahkan berdasarkan fungsionalitasnya dan hanya akan menangani satu tanggung jawab (fungsi).
 
-Tanpa (SRP)
+### Tanpa (SRP)
 ```dart
 class Order {
   void calculeteTotalSum() {}
@@ -17,11 +17,12 @@ class Order {
   void getDailyHistory() {}
   void getMonthlyHistory() {}
 }
-```
- 
 class Item {}
 
-(SRP)
+```
+ 
+
+## (SRP)
 ```dart
 class Order {
   void calculateTotalSum() {}
@@ -43,3 +44,4 @@ class OrderViewer {
   void showOrder(Order order) {}
 }
 ```
+<img src="https://github.com/msarifin29/solid/blob/main/S.jpeg" width="350" height="700" />
