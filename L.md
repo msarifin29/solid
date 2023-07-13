@@ -1,8 +1,6 @@
-L = Liskov Substitution Principle (LSP)
+# L = Liskov Substitution Principle (LSP)
 
-“If for each object o1 of type S there is an object o2 of type T such that for 
-all programs P defined in terms of T, the behaviour of P is unchanged when
- o1 is substituted for o2 then S is a subtype of T.” [2] (Barbara Liskov, 1988)
+## “If for each object o1 of type S there is an object o2 of type T such that for  all programs P defined in terms of T, the behaviour of P is unchanged when o1 is substituted for o2 then S is a subtype of T.” [2] (Barbara Liskov, 1988)
 
 Sederhananya, Liskov’s substitution adalah aturan yang berlaku untuk hirarki 
 pewarisan.  Hal ini mengharuskan kita untuk mendesain kelas-kelas yang kita
@@ -10,7 +8,7 @@ pewarisan.  Hal ini mengharuskan kita untuk mendesain kelas-kelas yang kita
  mengetahui tentang perubahan yang ada. Oleh karena itu, seluruh SubClass 
  setidaknya dapat berjalan dengan cara yang sama seperti SuperClass-nya.
 
-Tanpa (LSP)
+### Tanpa (LSP)
 ```dart
 abstract class Product {
     String getName();
@@ -47,7 +45,7 @@ class Smartphone extends Product {
 }
 ```
 
-(LSP)
+### (LSP)
 ```dart
 abstract class Product {
     String getName();
@@ -73,7 +71,7 @@ class Vegetable extends FoodProduct {
         return DateTime.now();
     }
 }
- 
+
 class Smartphone extends Product {
     @override
     String getName() {
@@ -81,3 +79,5 @@ class Smartphone extends Product {
     }
 }
 ```
+
+<img src="https://github.com/msarifin29/solid/blob/main/L.png" width="350" height="700" />
