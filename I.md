@@ -1,12 +1,11 @@
-I = Interface Segregation Principle (ISP)
+# I = Interface Segregation Principle (ISP)
 
-"Clients should not be forced to depend upon interfaces that they do not use."
-(Robert Cecil Martin)
+## "Clients should not be forced to depend upon interfaces that they do not use." (Robert Cecil Martin)
 
 Prinsip ini sendiri bertujuan untuk mengurangi jumlah ketergantungan sebuah 
 class terhadap interface class yang tidak dibutuhkan.
 
-Tanpa (ISP)
+### Tanpa (ISP)
 ```dart
 abstract class VehicleInterface {
   void drive();
@@ -31,7 +30,7 @@ class MotorCycle implements VehicleInterface {
 }
 ```
 
-(ISP)
+### (ISP)
 ```dart
 abstract class VehicleInterface {
   void drive();
@@ -81,3 +80,4 @@ class Car implements VehicleInterface, DoorInterface {
   }
 }
 ```
+<img src="https://github.com/msarifin29/solid/blob/main/I.jpeg" width="350" height="700" />
